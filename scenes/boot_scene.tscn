@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://7wbwe3co7pes"]
 
-[ext_resource type="Script" uid="uid://c8ra82ntamv7w" path="res://scenes/boot_scene.gd" id="1_spi3w"]
+[ext_resource type="Script" uid="uid://c8ra82ntamv7w" path="res://gd/boot_scene.gd" id="1_spi3w"]
 [ext_resource type="FontFile" uid="uid://bvv20u83b2qpt" path="res://JetBrainsMono-2.304/fonts/ttf/JetBrainsMonoNL-SemiBoldItalic.ttf" id="2_avvel"]
 
 [node name="BootScene" type="Node2D"]

@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://cjlsk7tmjobmk"]
 
-[ext_resource type="Script" uid="uid://c2ghduq5lv22" path="res://scenes/corrupted_scene.gd" id="1_4e7yw"]
+[ext_resource type="Script" uid="uid://c2ghduq5lv22" path="res://gd/corrupted_scene.gd" id="1_4e7yw"]
 [ext_resource type="FontFile" uid="uid://cpmd3h70m58a4" path="res://JetBrainsMono-2.304/fonts/webfonts/JetBrainsMono-ExtraLight.woff2" id="2_whvd8"]
-[ext_resource type="AudioStream" uid="uid://dn0cquacbebc" path="res://wind.ogg" id="3_whvd8"]
+[ext_resource type="AudioStream" path="res://wind.ogg" id="3_whvd8"]
 
 [node name="CorruptedScene" type="Node2D"]
 script = ExtResource("1_4e7yw")

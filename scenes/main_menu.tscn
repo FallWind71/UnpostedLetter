@@ -1,15 +1,15 @@
 [gd_scene load_steps=15 format=3 uid="uid://beeevd8vfjl3o"]
 
-[ext_resource type="Script" uid="uid://bb7ph577qwxje" path="res://scenes/main_menu.gd" id="1_bqqt6"]
-[ext_resource type="Texture2D" uid="uid://dgt6ixopi51ym" path="res://assets/1 - draft_bg.png" id="1_ekxnf"]
-[ext_resource type="Texture2D" uid="uid://c4igs4u7wnsl6" path="res://assets/2 - draft_bg.png" id="2_bqqt6"]
-[ext_resource type="Script" uid="uid://bklthn6dgbq4s" path="res://scenes/background.gd" id="4_5dd4i"]
-[ext_resource type="Texture2D" uid="uid://dlsy7mtf47hti" path="res://assets/1 - title.png" id="4_8ln24"]
-[ext_resource type="Texture2D" uid="uid://dpdlin5eh5xab" path="res://assets/2 - title.png" id="5_rtw2f"]
-[ext_resource type="Texture2D" uid="uid://dnl6v1ilmyts3" path="res://assets/1 - btn_start.png" id="6_jk1qb"]
-[ext_resource type="Texture2D" uid="uid://c22jrr63sm75u" path="res://assets/2 - btn_start.png" id="7_5dd4i"]
-[ext_resource type="Texture2D" uid="uid://drc3c5bfd2xlp" path="res://assets/1 - btn_exit.png" id="8_lgwnu"]
-[ext_resource type="Texture2D" uid="uid://b2l014qcwwavs" path="res://assets/2 - btn_exit.png" id="9_flqon"]
+[ext_resource type="Script" uid="uid://bb7ph577qwxje" path="res://gd/main_menu.gd" id="1_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://dgt6ixopi51ym" path="res://assets/pic/1 - draft_bg.png" id="1_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://c4igs4u7wnsl6" path="res://assets/pic/2 - draft_bg.png" id="2_bqqt6"]
+[ext_resource type="Script" uid="uid://bklthn6dgbq4s" path="res://gd/background.gd" id="4_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://dlsy7mtf47hti" path="res://assets/pic/1 - title.png" id="4_8ln24"]
+[ext_resource type="Texture2D" uid="uid://dpdlin5eh5xab" path="res://assets/pic/2 - title.png" id="5_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://dnl6v1ilmyts3" path="res://assets/pic/1 - btn_start.png" id="6_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://c22jrr63sm75u" path="res://assets/pic/2 - btn_start.png" id="7_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://drc3c5bfd2xlp" path="res://assets/pic/1 - btn_exit.png" id="8_lgwnu"]
+[ext_resource type="Texture2D" uid="uid://b2l014qcwwavs" path="res://assets/pic/2 - btn_exit.png" id="9_flqon"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wu84c"]
 animations = [{
@@ -75,7 +75,7 @@ visible = false
 position = Vector2(0, -188)
 sprite_frames = SubResource("SpriteFrames_wu84c")
 autoplay = "default"
-frame_progress = 0.0287938
+frame_progress = 0.975206
 centered = false
 script = ExtResource("4_5dd4i")
 
