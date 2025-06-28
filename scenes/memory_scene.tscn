@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkytecefnullx"]
+
+[ext_resource type="Script" uid="uid://ctesae5qf4v1p" path="res://scenes/memory_scene.gd" id="1_f56gk"]
+
+[node name="MemoryScene" type="Node2D"]
+script = ExtResource("1_f56gk")
+
+[node name="TerminalLog" type="RichTextLabel" parent="."]
+offset_right = 1153.0
+offset_bottom = 644.0
+
+[node name="ContinueHint" type="Label" parent="."]
+offset_left = 13.0
+offset_top = 335.0
+offset_right = 589.0
+offset_bottom = 645.0
