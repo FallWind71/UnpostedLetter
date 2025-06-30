@@ -57,9 +57,8 @@ func _show_next_text():
 	terminal.clear()
 	terminal.bbcode_text = "[color=%s]%s[/color]" % [color_tag, text]
 
-	# Revision 12: 粒子效果展示
 
-	# 淡入动画
+	
 	terminal.modulate.a = 0.0
 	tween.kill()
 	tween = create_tween()
@@ -67,7 +66,6 @@ func _show_next_text():
 	tween.connect("finished", Callable(self, "_on_fade_in_complete"))
 
 func _screen_shake(duration: float):
-	# 简易屏幕抖动（仅当存在摄像机时）
 	var cam = get_viewport().get_camera_2d()
 	if cam:
 		var orig = cam.offset

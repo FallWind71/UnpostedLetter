@@ -25,7 +25,7 @@ func _on_start_pressed():
 	if login_popup:
 		login_popup.popup()
 		if error_label:
-			error_label.text = ""  # 清空上一次错误
+			error_label.text = ""  
 
 func _on_exit_pressed():
 	get_tree().quit()
@@ -45,18 +45,16 @@ func _ready():
 	print("StartButtonAnimation playing? ", start_button_animation.is_playing())
 	print("StartButtonAnimation current anim: ", start_button_animation.animation)
 	print("StartButtonAnimation has frames: ", start_button_animation.sprite_frames.get_animation_names())
-
+#尝试隐藏按钮，但失败了
 	if bg_music:
 		bg_music.play()
 	if start_button:
 		start_button.connect("pressed", _on_start_pressed)
-		# 隐藏按钮但保留交互
-		start_button.visible = true  # 保持可交互
+		start_button.visible = true  
 	if exit_button:
 		exit_button.connect("pressed", _on_exit_pressed)
-		# 隐藏按钮但保留交互
-		exit_button.modulate.a = 0  # 完全透明
-		exit_button.visible = true  # 保持可交互
+		exit_button.modulate.a = 0  
+		exit_button.visible = true  
 	var frames = load("res://assets/animations/background_frames.tres")
 	if not frames:
 		push_error("无法加载动画帧资源")

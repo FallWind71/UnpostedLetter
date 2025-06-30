@@ -13,6 +13,7 @@ var displayed_lines: Array[String] = []
 var crash_timer := Timer.new()
 
 # 改成写当前工作目录下的文件
+#虽然说改成user目录更加通用，但谁没事会看哪个目录啊
 var draft_path := ""
 
 var log_lines = [
@@ -47,6 +48,7 @@ var log_lines = [
 	"[    0.000028] Rebuilding runtime modules...",
 	"[    0.000029] Input subsystem online. Bindings: WASD / Arrow Keys",
 	"[    0.000029] [ERROR] WASD Files Couldn't Be Found",
+	#这里预计是作为隐藏信息，后续开发横板操控时，提示“WASD”但实际上只能用箭头键操作。但后续没有时间进行开发了
 	"[    0.000030] [WARN] Input conflict: jump_action unbound",
 	"[    0.000031] Scanning user config...",
 	"[    0.000032] [ERROR] user_config.cfg corrupted or missing",
@@ -170,7 +172,7 @@ func write_files() -> void:
 	var dir_path = dir.get_current_dir()
 	draft_path = dir_path + "/" + "draft.txt"
 	var job_path = dir_path + "/" + "job_application.txt"
-
+#改了好久的路径加载
 	var draft_file = FileAccess.open(draft_path, FileAccess.WRITE)
 	if draft_file != null:
 		var draft_content = """
@@ -208,7 +210,6 @@ func write_files() -> void:
 我对细节有执着的追求，且能够高效解决开发中的各种问题。  
 
 希望能有机会加入贵公司，与团队一起创造更多优秀的游戏作品。  
-密码“2021”是我项目中的一个重要线索，也体现了我的用心和坚持。  
 
 感谢您的考虑，期待您的回复。
 
